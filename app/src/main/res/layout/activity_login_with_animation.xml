@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgoround_main"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context="com.muravtech.merisiksha.common.LoginWithAnimation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_100"
+        android:layout_above="@+id/logintext1"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/merishiksha_logo" />
+
+
+    <TextView
+        android:id="@+id/logintext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_40"
+        android:gravity="center"
+        android:text="@string/we_will_send_you_one_time_password_otp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/margin_20"
+        android:textStyle="normal" />
+
+
+    <EditText
+        android:id="@+id/edt_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_40"
+        android:cursorVisible="true"
+        android:background="@drawable/white_border_round_corner"
+        android:gravity="center"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edt_mobile"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:background="@drawable/add_button_design"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Get otp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_16"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>
+</ScrollView>

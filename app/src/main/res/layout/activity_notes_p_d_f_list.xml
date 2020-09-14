@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.muravtech.merisiksha.student_ui.NotesPDFList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/ic_arrow" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/notes"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reli"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_network"
+            android:src="@drawable/nointerrnet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btnretry"
+            android:text="Retry"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/blue_txt"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclePDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/font_20"/>
+
+
+    <com.muravtech.merisiksha.utils.CustomTextView
+        android:id="@+id/empty_view"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="@string/no_data_found"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/margin_30"
+        android:visibility="gone" />
+
+</LinearLayout>

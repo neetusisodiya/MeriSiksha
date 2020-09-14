@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="7dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="3dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_title_name"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Title:     "
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:textColor="#000" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAllCaps="true"
+                        android:typeface="sans"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_teacher_name"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher Name: "
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:textColor="#000" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView_teachers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAllCaps="true"
+                        android:typeface="sans"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_date_create"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:text="Task Given On: "
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:textColor="#000" />
+
+
+                    <TextView
+                        android:id="@+id/textView_taskcreate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:typeface="sans"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_date_complete"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Deadline: "
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:textColor="#000" />
+                    <TextView
+                        android:id="@+id/textView_taskcompletion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:typeface="sans"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_description"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Description: "
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:layout_marginTop="2dp"
+                        android:textSize="15dp"
+                        android:textColor="#000" />
+                    <TextView
+                        android:id="@+id/textView_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:typeface="sans"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical">
+                <Button
+                    android:id="@+id/button_done"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/redshape" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

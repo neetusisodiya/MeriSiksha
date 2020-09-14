@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearEnglish"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/item_border">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:id="@+id/totalMarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/colorBorderLine">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:id="@+id/negMarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/totalMarks"
+                            android:textAppearance="?android:textAppearanceSmall"
+
+                            android:textColor="@color/news">
+
+                        </TextView>
+
+                        <TextView
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/colorPrimary">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/queDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorPrimary">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/type_single"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer1Tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="A"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+
+                            <TextView
+                                android:id="@+id/answer1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer2Tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="B"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+
+                            <TextView
+                                android:id="@+id/answer2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer3Tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="C"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+
+                            <TextView
+                                android:id="@+id/answer3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer4Tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="D"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+
+                            <TextView
+                                android:id="@+id/answer4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout5"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer5Tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="E"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+                            <TextView
+                                android:id="@+id/answer5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/type_range"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+
+                        android:weightSum="10">
+
+
+                        <EditText
+                            android:id="@+id/answer_range"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:background="@drawable/item_border"
+                            android:hint="Your Answer"
+                            android:padding="6dp"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#000">
+
+
+                        </EditText>
+
+
+                        <TextView
+                            android:id="@+id/value_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/type_mul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox" />
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox" />
+
+                            <TextView
+                                android:id="@+id/tv2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox" />
+
+                            <TextView
+                                android:id="@+id/tv3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox" />
+
+                            <TextView
+                                android:id="@+id/tv4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/ll_5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox" />
+
+                            <TextView
+                                android:id="@+id/tv5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearHindi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_border"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:id="@+id/totalMarksHindi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/news">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:id="@+id/negMarksHindi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/totalMarksHindi"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/colorBorderLine">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="@color/colorPrimary">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/queDescriptionHindi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorPrimary">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/questionHindi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="fill"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/type_single_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer1TagHindi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="A"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"/>
+
+
+                            <TextView
+                                android:id="@+id/answer1Hindi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer2TagHindi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="B"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"/>
+
+
+                            <TextView
+                                android:id="@+id/answer2Hindi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer3TagHindi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="C"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"/>
+
+
+                            <TextView
+                                android:id="@+id/answer3Hindi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer4TagHindi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="D"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+
+                            <TextView
+                                android:id="@+id/answer4Hindi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout5Hindi"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+
+                            android:orientation="horizontal">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                                android:id="@+id/answer5TagHindi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="6dp"
+                                android:text="E"
+
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </com.muravtech.merisiksha.onlineexam.utilities.CircularTextView>
+
+
+                            <TextView
+                                android:id="@+id/answer5Hindi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/type_range_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+
+                        android:weightSum="10">
+
+
+                        <EditText
+                            android:id="@+id/answer_range_h"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            android:background="@drawable/item_border"
+                            android:hint="Your Answer"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#000">
+
+
+                        </EditText>
+
+
+                        <TextView
+                            android:id="@+id/value_answer_h"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/type_mul_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/cb1_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox"/>
+                            <TextView
+                                android:id="@+id/tv1_h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/cb2_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox"/>
+                            <TextView
+                                android:id="@+id/tv2_h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/cb3_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox"/>
+                            <TextView
+                                android:id="@+id/tv3_h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/cb4_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox"/>
+                            <TextView
+                                android:id="@+id/tv4_h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/ll_5_h"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/cb5_h"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:button="@xml/custom_checkbox"/>
+                            <TextView
+                                android:id="@+id/tv5_h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/item_border"
+                                android:padding="6dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="#000"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

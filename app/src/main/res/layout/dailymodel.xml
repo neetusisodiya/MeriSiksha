@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quantiative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/font_10"
+        app:cardCornerRadius="@dimen/margin_8"
+        app:cardElevation="@dimen/font_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/font_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dailyImg"
+                android:layout_width="@dimen/margin_100"
+                android:layout_height="@dimen/margin_100"
+                android:src="@drawable/ic_exam"/>
+
+            <TextView
+                android:id="@+id/DailyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/font_32"
+                android:text="Quantitative Aptitude"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

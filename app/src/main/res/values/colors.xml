@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#008577</color>
+     <color name="colorPrimaryDark">#00574B</color>
+     <color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorPrimary">#0D3DC1</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#0D3DC1</color>
+    <color name="green">#89DB8B</color>
+    <color name="red">#F44336</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#905bc0de</color>
+    <color name="button_color">#ff685b</color>
+    <color name="graident_bottom">#0D3DC1</color>
+    <color name="gradient_top">#0D3DC1</color>
+    <color name="thirdnarybackgrey">#f1f1f1</color>
+
+
+    /////
+    dashboard calss
+    <color name="exam">#0081da</color>
+    <color name="video">#7b519e</color>
+    <color name="notes">#017cae</color>
+    <color name="ebook">#274490</color>
+    <color name="news">#00a88f</color>
+    <color name="notification">#d74248</color>
+
+    <color name="colorRouteLine">#FF4081</color>
+
+    <color name="itemFooterColor">#f6f6f6</color>
+    <color name="hover_color">#ff6f4a</color>
+    <color name="unhover_color">#e3e3e3</color>
+    <color name="botton_background">#ff685b</color>
+    <color name="tab_unselect_text">#c8c8c8</color>
+    <color name="tab_normal_txt_color">#c9abad</color>
+    <color name="diamond_background">#dd4497</color>
+    <color name="ruby_background">#3b56a7</color>
+    <color name="emerlad_background">#1b9dd9</color>
+    <color name="elite_background">#e7567d</color>
+    <color name="chatting_background">#2abb9e</color>
+    <color name="chatting_video_background">#cf952a</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="black_transparent">#99262626</color>
+    <color name="colorBlack">#000000</color>
+    <color name="addon_text">#656565</color>
+    <color name="txt_color">#71717d</color>
+    <color name="view_color">#e5e5e5</color>
+    <color name="txt_green">#367c1a</color>
+    <color name="txt_color_highlight">#fe606e</color>
+    <color name="colorBlackLight">#262626</color>
+    <color name="blue_txt">#1b9ddb</color>
+    <color name="colorGrayLight">#616161</color>
+    <color name="partner_details_txt">#565656</color>
+    <color name="colorBorderLine">#ff5e6d</color>
+    <color name="colorPinkLight">#f95ca5</color>
+    <color name="colorLightestPink">#FFA1CD</color>
+    <color name="colorLightestPink3CB">#E7B3CB</color>
+    <color name="view_back">#b7b7b7</color>
+    <color name="colorYellow">#EBF300</color>
+    <color name="drop_down_hint">#b6b6b6</color>
+    <color name="yellow">#f7ff00</color>
+    <color name="colorRed">#d21212</color>
+    <color name="colorLighterPink">#ffe0ee</color>
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorTextPink">#ffd8ea</color>
+    <color name="colorTransparent">#43000000</color>
+    <color name="redTransparent">#7ffd0101</color>
+    <color name="webdilog">#151723</color>
+    <color name="membership_color">#7c7b7b</color>
+    <color name="notification_message_short">#fd5e72</color>
+    <color name="notifcation_txt">#9fa0a2</color>
+    <!-- Bootstrap Brand Colors (Universal) -->
+    <color name="black">#000000</color>
+    <!-- Grayscale -->
+    <color name="bootstrap_gray_dark">#373a3c</color>
+    <color name="bootstrap_gray">#55595c</color>
+    <color name="bootstrap_gray_light">#818a91</color>
+    <color name="bootstrap_gray_lighter">#eceeef</color>
+    <color name="bootstrap_gray_lightest">#f7f7f9</color>
+
+    <!-- Brand -->
+    <color name="bootstrap_brand_primary">#0275d8</color>
+    <color name="bootstrap_brand_success">#5cb85c</color>
+    <color name="bootstrap_brand_info">#5bc0de</color>
+    <color name="bootstrap_brand_warning">#d51d72</color>
+    <color name="bootstrap_brand_danger">#bf1564</color>
+
+    <color name="notAns">#d9534f</color>
+
+
+    <color name="red_500">#0D3DC1</color>
+    <color name="red_200">#0D3DC1</color>
+    <color name="blue_500">#00FFFFFF</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="orange_500">#FF9800</color>
+
+    <!-- View Specific -->
+
+    <!-- Buttons -->
+    <color name="bootstrap_brand_secondary_fill">#ffffff</color>
+    <color name="bootstrap_brand_secondary_border">#cccccc</color>
+    <color name="bootstrap_brand_secondary_text">#373a3c</color>
+
+    <!-- Misc -->
+    <color name="bootstrap_edittext_disabled">#ffe0e0e0</color>
+    <color name="bootstrap_thumbnail_background">#ffffffff</color>
+    <color name="bootstrap_well_background">#F5F5F5</color>
+    <color name="bootstrap_dropdown_divider">#e7e7e7</color>
+    <color name="bootstrap_well_border_color">#E7E7E7</color>
+    <color name="bootstrap_alert_cross_default">#64818a91</color>
+
+    <color name="disabled_color">#440000</color>
+    <color name="error_color">#E7492E</color>
+    <color name="colorAccentTransparent">#81d51d72</color>
+    <color name="colorGray">#d5d5d5</color>
+    <color name="colorGrayLightest">#f0f0f0</color>
+    <color name="color69">#696969</color>
+    <color name="colord9">#d9d9d9</color>
+    <color name="colord91">#80d9d9d9</color>
+    <color name="color_gray_light">#f4f4f4</color>
+</resources>

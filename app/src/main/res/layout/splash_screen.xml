@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="@color/white_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="@dimen/margin_150"
+        android:layout_marginTop="@dimen/margin_100"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:src="@mipmap/merishiksha_logo" />
+
+
+    <!--    <com.tomer.fadingtextview.FadingTextView-->
+    <!--        android:id="@+id/fadingText"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:texts="@array/text"-->
+    <!--        android:layout_marginTop="@dimen/font_20"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_below="@+id/logo"-->
+    <!--        android:textSize="@dimen/font_20"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        app:timeout="500"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_topvendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_child"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/defaultpic"
+                app:civ_border="true"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_check"
+                android:layout_toRightOf="@+id/iv_child"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_roll_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/iv_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:button="@drawable/add_selector" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/ic_arrow" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="@string/image_upload"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/ebook"
+            android:text="@string/choose_image"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bootstrap_brand_primary"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#3281D2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleImage"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:text="@string/choose_image"
+        android:gravity="center"
+        android:textSize="@dimen/margin_30"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#3281D2" />
+
+
+</LinearLayout>

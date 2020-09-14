@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_5"
+    android:layout_marginRight="@dimen/margin_5"
+    android:layout_marginTop="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_10">
+
+        <RelativeLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10">
+
+            <LinearLayout
+                android:id="@+id/message_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/subject_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topics :- English"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_20" />
+                <View
+                    android:visibility="gone"
+                    android:layout_width="@dimen/margin_60"
+                    android:layout_height="1dp"
+                    android:background="@color/gradient_top" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/message_ll"
+                android:id="@+id/descrption_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/discraption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrption :- English"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16" />
+                <View
+                    android:visibility="gone"
+                    android:layout_width="@dimen/margin_60"
+                    android:layout_height="1dp"
+                    android:background="@color/gradient_top" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_3"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="@dimen/margin_3"
+        android:background="@mipmap/green_strip" />
+
+</LinearLayout>

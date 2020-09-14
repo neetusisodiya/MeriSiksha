@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1b9ddb">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bootstrap_brand_primary">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="RESULT"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/viewResult"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+
+                android:layout_below="@+id/result"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="4dp"
+                android:background="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bootstrap_brand_primary">
+
+
+            <TextView
+                android:id="@+id/analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Analysis"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+
+            <View
+                android:id="@+id/viewAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/analysis"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="4dp"
+                android:background="#FFFFFF"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bootstrap_brand_primary">
+
+
+            <TextView
+                android:id="@+id/solutions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="solutions"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#FFFFFF"
+
+                />
+
+
+            <View
+                android:id="@+id/viewSolutions"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/solutions"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="4dp"
+                android:background="#FFFFFF"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/activity_result"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:text=""
+                            android:textSize="20sp" />
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#112244" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CustomProgress
+                                android:id="@+id/customProgressNotAnswered"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp" />
+
+
+                            <TextView
+                                android:id="@+id/notAnsweredProgress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="15 Not Answered"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CustomProgress
+                                android:id="@+id/customProgressCorrectAnswered"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp" />
+
+
+                            <TextView
+                                android:id="@+id/textViewCorrectAnswerProgress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="10 Correct Answered"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+
+                            <com.muravtech.merisiksha.onlineexam.utilities.CustomProgress
+                                android:id="@+id/customProgressWrongAnswered"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp" />
+
+
+                            <TextView
+                                android:id="@+id/textViewWrongAnswerProgress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="5 Wrong Answered"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#112244" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="#00112244" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Number of Questions"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/totalQuestions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="25"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Your Score"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBoxTotalAnalysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/red_500"
+                        android:checked="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:text="10/210"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bootstrap_brand_primary"
+                        android:padding="8dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView4"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Correct"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                            android:id="@+id/allCorrectAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="12"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/correct_icona" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0081da"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/wrong_icona" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView5"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Wrong"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                            android:id="@+id/allWrongAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="12"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#1b9ddb"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/not_ansa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView6"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Not Answered"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                            android:id="@+id/allNotAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="12"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bootstrap_brand_primary"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/scorea" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView7"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Your Score"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                        <TextView
+                            android:id="@+id/yourScoreTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#1b9ddb"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/y_scorea" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView8"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Your Rank"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+
+                        <TextView
+                            android:id="@+id/yourRank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="12"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0081da"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/total_candidatea" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView9"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Total Candidates"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+
+                        <TextView
+                            android:id="@+id/totalCandidates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="12"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bootstrap_brand_primary"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/top_scorea" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView10"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Topper’s Score"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+
+                        <TextView
+                            android:id="@+id/bestScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="12"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/white" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+
+                        <Button
+                            android:id="@+id/feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+
+                            android:layout_gravity="center"
+                            android:layout_margin="6dp"
+                            android:background="@color/red_200"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Feedback"
+                            android:textAllCaps="false"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                        <Button
+                            android:id="@+id/downloadPdf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="6dp"
+                            android:background="@color/red_200"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Video Solution"
+                            android:textAllCaps="false"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFFFFF" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="8dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Section Wise Performance"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boundry_style"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:text="Sections"
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:text="Total Que."
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:text="Attempt"
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:paddingRight="14dp"
+                    android:singleLine="true"
+                    android:text="Correct"
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:paddingRight="14dp"
+                    android:singleLine="true"
+                    android:text="Time"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/colorPrimary"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false">
+
+
+            </ListView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_solutions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/correctLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#5cb85c"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Correct"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                            android:id="@+id/CorrectAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="12"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/viewSolutionCorrect"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/result"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/wrongLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/notAns"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Wrong"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                            android:id="@+id/WrongAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="12"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewSolutionWrong"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/result"
+                        android:layout_marginLeft="8dp"
+
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#FFFFFF"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/notAnsLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Not Ans."
+                            android:textAllCaps="true"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                            android:id="@+id/NotAnswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="12"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/viewSolutionNotAns"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/result"
+
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/buttonNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/shape"
+                        android:text="Next"
+                        android:textColor="#FFFFFF" />
+
+
+                    <Button
+                        android:id="@+id/buttonPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/shape"
+                        android:text="Previous"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textViewQuestionNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="1/25"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.viewpager.widget.ViewPager
+
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

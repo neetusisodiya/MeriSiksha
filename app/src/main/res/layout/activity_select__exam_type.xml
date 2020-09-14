@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colord9"
+    tools:context=".student_ui.Select_ExamType">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mackBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backmock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/ic_arrowblack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/backmock"
+                android:gravity="center_vertical"
+                android:text="Exam"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_20" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/bell2" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:id="@+id/cardViewGeneralExam"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/goToExam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/margin_6"
+                app:cardElevation="@dimen/margin_8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/mockExam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageEducation"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/font_10"
+                        android:gravity="center"
+                        android:text="General Exam"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18" />
+
+                    <ImageView
+                        android:id="@+id/imageEducation"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_exam" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardViewPremiumExam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/goToExam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/margin_6"
+                app:cardElevation="@dimen/margin_8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/mockExam1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageEducation1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/font_10"
+                        android:gravity="center"
+                        android:text="Premium Exam"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18" />
+
+                    <ImageView
+                        android:id="@+id/imageEducation1"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_exam" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

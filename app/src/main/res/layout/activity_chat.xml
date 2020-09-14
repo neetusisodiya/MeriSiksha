@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/ic_arrow" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="@dimen/margin_50"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/defaultpic" />
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/iv_profile"
+                android:text="Chat"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_16"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/ic_more" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_view_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Load more"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_16"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/tv_view_more"
+            android:id="@+id/recycle_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:layout_marginRight="@dimen/margin_14"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"/>
+
+
+        <!-- Botton header for chat-->
+        <LinearLayout
+            android:id="@+id/bottomSendMessageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <!--Send message EDt-->
+            <EditText
+                android:id="@+id/chatSendmessageEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_14"
+                android:layout_marginRight="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="1"
+                android:background="@drawable/chatedittext_circularstyle"
+                android:hint="Type here"
+                android:maxLines="2"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/margin_11" />
+
+            <!--Send message Img-->
+            <ImageView
+                android:id="@+id/chatSend"
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="@dimen/margin_50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_7"
+                android:adjustViewBounds="true"
+                android:background="@drawable/send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <include-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/set_padding55"-->
+<!--        layout="@layout/activity_group_chatactivity"/>-->
+
+
+
+
+</RelativeLayout>

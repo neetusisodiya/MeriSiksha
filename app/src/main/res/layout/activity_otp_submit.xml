@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgoround_main"
+    android:orientation="vertical"
+    tools:context="com.muravtech.merisiksha.common.LoginWithAnimation">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="@dimen/margin_100"
+        android:layout_above="@+id/logintext1"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/merishiksha_logo" />
+
+
+    <TextView
+        android:id="@+id/logintext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/OtpReset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_40"
+        android:text="OTP Verification"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/OtpReset"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/red"
+        android:textColor="@color/white"
+        app:pinLineColors="@color/white"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:pinAnimationType="popIn" />
+
+
+    <TextView
+        android:id="@+id/OtpVerify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_below="@+id/OtpReset"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:background="@drawable/add_button_design"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:text="Verify &amp;proceed"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_16"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_below="@+id/OtpVerify"
+        android:id="@+id/ResendOtpTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend Otp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_below="@+id/OtpVerify"
+        android:id="@+id/TimeOtpTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

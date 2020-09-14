@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/font_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/font_10"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/testImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_bank"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/font_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/testTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time and Work"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_20"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/testques"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="total quation:0"
+                        android:layout_weight="1"
+                        tools:ignore="Suspicious0dp" />
+
+                    <TextView
+                        android:id="@+id/testMarks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="total marks:0"
+                        android:layout_weight="1"
+                        tools:ignore="Suspicious0dp" />
+
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="subject: Quantative Aptitude"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/level"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Level: Easy"
+                        android:layout_weight="1"
+                        tools:ignore="Suspicious0dp" />
+
+                    <TextView
+                        android:id="@+id/testTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Time 15 minute"
+                        android:layout_weight="1"
+                        tools:ignore="Suspicious0dp" />
+
+                </LinearLayout>
+
+                    <TextView
+                       android:id="@+id/testAttempt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="attempt:0/10"
+                        tools:ignore="Suspicious0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/testButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="#FF5722"
+                android:text="Result Analysis"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

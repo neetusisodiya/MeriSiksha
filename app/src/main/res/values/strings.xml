@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Meri Siksha</string>
+    <string name="title_activity_new__menu">New_Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="open_drawer">OPEN</string>
+    <string name="close_drawer">Close</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="description">Media Controls</string>
+    <string name="description_addon">Description</string>
+    <string name="terms_condition">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_policy">Agree With Terms and Condition.</string>
+    <string name="Short_Description">Mathematics solves problems by using logic. One of the main tools of logic used by mathematicians is deduction. Deduction is a special way of thinking to discover and prove new truths using old truths. To a mathematician, the reason something is true (called a proof) is just as important as the fact that it is true, and this reason is often found using deduction. Using deduction is what makes mathematics thinking different from other kinds of scientific thinking, which might rely on experiments or on interviews.</string>
+    <string name="ok">ok</string>
+    <string name="we_will_send_you_one_time_password_otp">We will send you <b>One Time Password</b>\n on this mobile number</string>
+
+    <integer name="swing_anim_time">1350</integer>
+    <string name="my_player_activity">Meri siksha</string>
+    <string name="fill_diary">Fill diary</string>
+    <string name="image_upload">Image Upload</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="holiday">Holiday</string>
+    <string name="calendar">School Calendar</string>
+    <string name="upload_file">Upload file</string>
+    <string name="send_link">Send Link</string>
+    <string name="gallery">Gallery</string>
+    <string name="attendance">Attendance</string>
+
+    <string-array name="text">
+        <item>meri shiksha for study</item>
+        <item>material of study</item>
+        <item>Best App for study</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="notes">Notes</string>
+    <string name="fees">Fees</string>
+    <string name="no_data_found">No Data Found!!!</string>
+    <string name="video">Video</string>
+    <string name="subject">Subject</string>
+    <string name="result">Result</string>
+    <string name="daily_quiz">Daily Quiz</string>
+    <string name="enter_description">Enter description</string>
+    <string name="select_file_link">Select file</string>
+    <string name="enter_link">Enter link</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="title">Title</string>
+    <string name="done">Done</string>
+    <string name="save_attendance_succesfully">Save attendance succesfully</string>
+    <string name="student_list">Student List</string>
+    <string name="student_attendance">Students Attendance</string>
+    <string name="contact">Contact</string>
+
+    <string name="add_on">Add on</string>
+    <string name="days_ago">days ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="min_ago">min ago</string>
+    <string name="just_ago">Just now</string>
+    <string name="just_now">Just now</string>
+    <string name="sec_ago">sec ago</string>
+    <string name="are_you_sure_you_wnt_to_block">Are you sure you want to Block</string>
+    <string name="are_you_sure_you_wnt_to_unblock">Are you sure you want to Unblock</string>
+    <string name="cancel">Cancel</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="trying_to_connect">Trying to connect with internet.</string>
+    <string name="pls_enter_message">Please enter message.</string>
+
+    <string name="you_have_been_blocked">You have been blocked by this user!</string>
+    <string name="you_have_blocked">You have blocked this user!</string>
+    <string name="typehere">Type here...</string>
+
+    <string name="friend_request">Friend Requests</string>
+    <string name="you_have_no_friends">You have no friends</string>
+    <string name="online_exam">Online Exam</string>
+    <string name="notifications">Notifications</string>
+    <string name="upload_image">Upload Images</string>
+
+</resources>

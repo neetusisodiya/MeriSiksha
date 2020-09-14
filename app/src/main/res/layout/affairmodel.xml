@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/font_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/font_20"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/affairImg"
+                android:layout_width="@dimen/font_50"
+                android:layout_height="@dimen/font_50"
+                android:scaleType="centerCrop"
+                android:src="@drawable/currentaffair"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/font_10"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/AffairTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Daily Current Affairs 7th january 2020"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/affairDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020-01-12"/>
+
+    <TextView
+        android:id="@+id/affairTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:57:43"/>
+
+
+</LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/font_20"
+                android:layout_height="@dimen/font_20"
+                android:src="@drawable/ic_share"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/font_20"/>
+            <ImageView
+                android:layout_width="@dimen/font_20"
+                android:layout_height="@dimen/font_20"
+                android:src="@drawable/ic_turned"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/font_20"/>
+
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/affairSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/font_10"
+                android:text="The Indian Spaces Research Organization (ISRO)"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

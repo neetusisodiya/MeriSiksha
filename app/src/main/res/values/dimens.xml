@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">10dp</dimen>
+    <dimen name="card_margin">6dp</dimen> <!--(activity_margin - 4dp)-->
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_width">90dp</dimen>
+    <dimen name="image_small_width">45dp</dimen>
+    <dimen name="default_item_padding">8dp</dimen>
+
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+    </array>
+    <!--common margin units-->
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3_3">3.3dp</dimen>
+    <dimen name="margin_3_5">3.5dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_57">57dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_105">105dp</dimen>
+    <dimen name="margin_110">110dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_140">140dp</dimen>
+    <dimen name="margin_180">180dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_160">160dp</dimen>
+    <dimen name="margin_170">170dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_210">210dp</dimen>
+    <dimen name="margin_220">220dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+
+    <!--common font units-->
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_11">11sp</dimen>
+
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_28">28sp</dimen>
+    <dimen name="font_30">30sp</dimen>
+    <dimen name="font_32">32sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_40">40sp</dimen>
+    <dimen name="font_50">50sp</dimen>
+    <dimen name="unread_counter_text_size">13sp</dimen>
+
+    <dimen name="chat_date_text_size">13sp</dimen>
+    <dimen name="chat_date_header_top_margin">30dp</dimen>
+
+    <dimen name="chat_author_text_size">16sp</dimen>
+    <dimen name="chat_attachment_preview_size">80dp</dimen>
+
+    <dimen name="chat_message_body_text_size">16sp</dimen>
+    <dimen name="chat_message_info_text_size">13sp</dimen>
+    <dimen name="chat_message_content_margin">4dp</dimen>
+    <dimen name="chat_message_username_margin">@dimen/chat_message_content_margin</dimen>
+
+    <dimen name="chat_message_attachment_username_margin">12dp</dimen>
+    <dimen name="chat_message_attachment_size">160dp</dimen>
+
+    <dimen name="list_item_side_margin">@dimen/padding_common_twice</dimen>
+    <dimen name="padding_common">8dp</dimen>
+    <dimen name="padding_common_twice">16dp</dimen>
+
+    <dimen name="splash_main_text_size">32sp</dimen>
+    <dimen name="splash_version_text_size">12sp</dimen>
+
+    <dimen name="fab_margin_right">16dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="grid_item_divider">1dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="item_width">80dp</dimen>
+    <dimen name="item_height">136dp</dimen>
+    <dimen name="action_bar_height">80dp</dimen>
+
+    <dimen name="toggle_button_params">60dp</dimen>
+    <dimen name="element_fragment_margin">30dp</dimen>
+    <dimen name="element_fragment_margin_small">8dp</dimen>
+
+    <dimen name="margin_common">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_very_small">3dp</dimen>
+
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="text_size_call">18sp</dimen>
+    <dimen name="text_size_ringing">16sp</dimen>
+
+
+    <integer name="users_count">10</integer>
+
+    <dimen name="padding_start">16dp</dimen>
+    <dimen name="padding_top">16dp</dimen>
+    <dimen name="padding_top_large">24dp</dimen>
+    <dimen name="padding_actionbar">24dp</dimen>
+    <dimen name="padding_user_icon">16dp</dimen>
+    <dimen name="padding_bottom">62dp</dimen>
+    <dimen name="padding_outgoing_screen">48dp</dimen>
+
+    <dimen name="list_item_padding_top">8dp</dimen>
+    <dimen name="list_item_padding_bottom">8dp</dimen>
+
+
+    <!--Pager fragment-->
+
+    <dimen name="pager_image_width">400dp</dimen>
+    <dimen name="pager_image_height">500dp</dimen>
+
+    <!-- Default button size -->
+    <dimen name="bootstrap_button_default_font_size">14sp</dimen>
+    <dimen name="percent_font_size">40sp</dimen>
+    <dimen name="bootstrap_button_default_vert_padding">5.75dp</dimen>
+    <dimen name="bootstrap_button_default_hori_padding">14dp</dimen>
+    <dimen name="bootstrap_button_default_corner_radius">4dp</dimen>
+    <dimen name="bootstrap_button_default_edge_width">1dp</dimen>
+
+    <!-- Default edit text size -->
+    <dimen name="bootstrap_edit_text_default_font_size">14sp</dimen>
+    <dimen name="bootstrap_edit_text_vert_padding">8dp</dimen>
+    <dimen name="bootstrap_edit_text_hori_padding">5.75dp</dimen>
+    <dimen name="bootstrap_edit_text_corner_radius">6dp</dimen>
+    <dimen name="bootstrap_edit_text_edge_width">1.5dp</dimen>
+
+    <!--Default alert size -->
+    <dimen name="bootstrap_alert_paddings">8dp</dimen>
+    <dimen name="bootstrap_alert_stroke_width">1dp</dimen>
+    <dimen name="bootstrap_alert_default_font_size">14sp</dimen>
+
+    <!-- Thumbnails -->
+    <dimen name="bthumbnail_default_border">8dp</dimen>
+    <dimen name="bthumbnail_rounded_corner">8dp</dimen>
+    <dimen name="bthumbnail_outer_stroke">2dp</dimen>
+
+    <!--Well-->
+    <dimen name="bootstrap_well_corner_radius">8dp</dimen>
+    <dimen name="bootstrap_well_stroke_width">1dp</dimen>
+    <dimen name="bootstrap_well_default_padding">6dp</dimen>
+    <!-- Default dropdown size -->
+    <dimen name="bootstrap_dropdown_default_item_font_size">14sp</dimen>
+    <dimen name="bootstrap_dropdown_default_font_size">14sp</dimen>
+    <dimen name="bootstrap_dropdown_default_item_left_padding">8dp</dimen>
+    <dimen name="bootstrap_dropdown_default_item_right_padding">8dp</dimen>
+    <dimen name="bootstrap_dropdown_default_corner_radius">3dp</dimen>
+    <dimen name="bootstrap_dropdown_default_edge_width">1dp</dimen>
+    <dimen name="bootstrap_dropdown_default_vert_padding">4dp</dimen>
+    <dimen name="bootstrap_dropdown_default_hori_padding">8dp</dimen>
+    <dimen name="bootstrap_dropdown_default_item_height">48dp</dimen>
+
+    <!-- Headings -->
+    <dimen name="bootstrap_h1_text_size">31.5sp</dimen>
+    <dimen name="bootstrap_h1_vert_padding">7.875dp</dimen>
+    <dimen name="bootstrap_h1_hori_padding">12.6dp</dimen>
+
+    <dimen name="bootstrap_h2_text_size">28sp</dimen>
+    <dimen name="bootstrap_h2_vert_padding">7dp</dimen>
+    <dimen name="bootstrap_h2_hori_padding">11.2dp</dimen>
+
+    <dimen name="bootstrap_h3_text_size">24.5sp</dimen>
+    <dimen name="bootstrap_h3_vert_padding">6.125dp</dimen>
+    <dimen name="bootstrap_h3_hori_padding">9.8dp</dimen>
+
+    <dimen name="bootstrap_h4_text_size">21sp</dimen>
+    <dimen name="bootstrap_h4_vert_padding">5.25dp</dimen>
+    <dimen name="bootstrap_h4_hori_padding">8.4dp</dimen>
+
+    <dimen name="bootstrap_h5_text_size">17.5sp</dimen>
+    <dimen name="bootstrap_h5_vert_padding">4.375dp</dimen>
+    <dimen name="bootstrap_h5_hori_padding">7dp</dimen>
+
+    <dimen name="bootstrap_h6_text_size">14dp</dimen>
+    <dimen name="bootstrap_h6_vert_padding">3.5dp</dimen>
+    <dimen name="bootstrap_h6_hori_padding">5.6dp</dimen>
+
+    <!-- Misc -->
+    <dimen name="bootstrap_default_corner_radius">3dp</dimen>
+    <dimen name="bootstrap_progress_bar_height">20dp</dimen>
+    <dimen name="bootstrap_badge_default_size">16dp</dimen>
+    <dimen name="bootstrap_progress_bar_default_font_size">17sp</dimen>
+    <dimen name="underline_top_spacing">8dp</dimen>
+    <dimen name="underline_bottom_spacing">4dp</dimen>
+    <dimen name="error_label_spacing">12dp</dimen>
+
+    <dimen name="floating_label_top_spacing">4dp</dimen>
+    <dimen name="floating_label_bottom_spacing">8dp</dimen>
+    <dimen name="floating_label_inside_spacing">12dp</dimen>
+
+    <dimen name="right_left_spinner_padding">8dp</dimen>
+
+    <dimen name="label_text_size">12sp</dimen>
+
+    <dimen name="min_content_height">20dp</dimen>
+
+</resources>

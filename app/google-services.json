@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "525629731052",
+    "firebase_url": "https://merisiksha-755c5.firebaseio.com",
+    "project_id": "merisiksha-755c5",
+    "storage_bucket": "merisiksha-755c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525629731052:android:b49f3889e8e95ea92575c9",
+        "android_client_info": {
+          "package_name": "com.muravtech.merisiksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525629731052-h6nptscltcour75nb2a2m3vr6caprh9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muravtech.merisiksha",
+            "certificate_hash": "d8a50e8ce1be56d692120511c724a71143a1f2b3"
+          }
+        },
+        {
+          "client_id": "525629731052-bve9s72n37to5kv4r98vogv4liak0mg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZbuxjEyHIaX3R9h9UfEjOv_NsYka_6k4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525629731052-bve9s72n37to5kv4r98vogv4liak0mg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

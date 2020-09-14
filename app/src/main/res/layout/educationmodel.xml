@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goToExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/margin_6"
+        app:cardElevation="@dimen/margin_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mockExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageEducation"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/font_10"
+                android:gravity="center"
+                android:text="Exam"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18" />
+
+            <ImageView
+                android:id="@+id/imageEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_exam" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

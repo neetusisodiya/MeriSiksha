@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_exam"-->
+<!--            android:icon="@drawable/ic_notepad"-->
+<!--            android:title="Exam" />-->
+<!--    </group>-->
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_video"-->
+<!--            android:icon="@drawable/ic_ply"-->
+<!--            android:title="Videos" />-->
+<!--</group>-->
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_notes"-->
+<!--            android:icon="@drawable/ic_notebook"-->
+<!--            android:title="Notes" />-->
+<!--    </group>-->
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_manage"-->
+<!--            android:icon="@drawable/ic_books_stack_of_three"-->
+<!--            android:title="E-Book" />-->
+<!--    </group>-->
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_news"-->
+<!--            android:icon="@drawable/ic_nn"-->
+<!--            android:title="News" />-->
+<!--    </group>-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/ic_result"
+            android:title="Result" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fees"
+            android:icon="@drawable/fees"
+            android:title="Fees" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contacts"
+            android:visible="false"
+            android:icon="@drawable/ic_contacts"
+            android:title="Contact us" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_cal"
+            android:title="Gallery" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cal"
+            android:icon="@drawable/calender"
+            android:title="School Calendar" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

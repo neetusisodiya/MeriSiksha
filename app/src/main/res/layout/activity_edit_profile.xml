@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.muravtech.merisiksha.common.EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/ic_arrowblack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_16"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColorHint="@color/colorPrimary"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_face">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:hint="Name"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        .
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColorHint="@color/colorPrimary"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_drafts">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColorHint="@color/colorPrimary"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_call">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_changeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:hint="Enter Contact Number"
+                android:inputType="number"
+                android:enabled="false"
+                android:maxLength="10"
+                android:padding="@dimen/margin_15"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColorHint="@color/colorPrimary"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_contacts">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:hint="Enter Father Name"
+                android:padding="@dimen/margin_15"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/changeDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:drawableLeft="@drawable/ic_cal"
+            android:drawablePadding="@dimen/margin_15"
+            android:hint="Date Of Birth"
+            android:textSize="@dimen/margin_16"
+            android:padding="@dimen/margin_15"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/submitChange"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_marginEnd="@dimen/margin_40"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</ScrollView>

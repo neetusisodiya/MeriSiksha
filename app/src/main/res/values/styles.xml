@@ -1,0 +1,67 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/gradient_top</item>
+        <item name="colorPrimaryDark">@color/gradient_top</item>
+        <item name="colorAccent">@color/gradient_top</item>
+    </style>
+    <style name="CustomProgressDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Background" parent="AppTheme">
+
+    </style>
+    <style name="EditText.Login" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/txt_color</item>
+        <item name="android:textColorHint">@color/txt_color</item>
+        <item name="colorAccent">@color/colorLightestPink</item>
+        <item name="android:textViewStyle">@style/Base.TextAppearance.AppCompat.Body2</item>
+        <item name="colorControlNormal">@color/colorLightestPink</item>
+        <item name="colorControlActivated">@color/colorLightestPink</item>
+    </style>
+    <style name="AppTabTextAppearanceSize" parent="AppTheme">
+        <item name="android:textViewStyle">@style/Base.TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="AppTabTextAppearanceSize16" parent="AppTheme">
+        <item name="android:textViewStyle">@style/Base.TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <style name="AppTabTextAppearanceSize20" parent="AppTheme">
+        <item name="android:textViewStyle">@style/Base.TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+</resources>
