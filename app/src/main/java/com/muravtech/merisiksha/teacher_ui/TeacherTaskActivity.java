@@ -49,6 +49,7 @@ public class TeacherTaskActivity extends AppCompatActivity implements OnItemClic
     @BindView(R.id.no_data)
     TextView no_data;
 
+
     String staffid, type;
     TaskAdapter testAdapter;
     @BindView(R.id.imageview_add)
