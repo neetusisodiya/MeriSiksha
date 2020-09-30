@@ -35,7 +35,7 @@
                 android:paddingRight="@dimen/margin_10">
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -47,7 +47,7 @@
                     app:fontName="Helvetica" />
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:id="@+id/ExamListExamName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 android:paddingRight="@dimen/margin_10">
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -85,7 +85,7 @@
 
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:id="@+id/ExamListTotalQuestion"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 android:paddingRight="@dimen/margin_10">
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -121,7 +121,7 @@
                     app:fontName="Helvetica" />
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:id="@+id/tv_totalMarks"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                 android:paddingRight="@dimen/margin_10">
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -158,7 +158,7 @@
                     app:fontName="Helvetica" />
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:id="@+id/tv_total_subject"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -185,7 +185,7 @@
                 >
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:text="Exam Duration"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                     app:fontName="Helvetica" />
 
 
-                <com.muravtech.merisiksha.utils.CustomTextView
+                <com.muravtech.meri_siksha.utils.CustomTextView
                     android:id="@+id/ExamListQuestionTime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

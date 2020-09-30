@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.muravtech.merisiksha">
+    package="com.muravtech.meri_siksha">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- Internet permission -->
     <uses-feature
@@ -27,7 +29,7 @@
         android:xlargeScreens="true"/>
 
     <application
-        android:name=".Application"
+        android:name="com.muravtech.meri_siksha.Application"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/siksha"
@@ -37,7 +39,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".common.EditProfile1"></activity>
+<!--        <activity android:name=".common.EditProfile1"></activity>-->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -51,108 +53,110 @@
             android:value="@string/google_maps_key"/>
 
         <activity
-            android:name=".common.MapsActivity"
+            android:name="com.muravtech.meri_siksha.common.MapsActivity"
             android:label="@string/title_activity_maps"/>
         <activity
-            android:name=".common.ContactActivity"
+            android:name="com.muravtech.meri_siksha.common.ContactActivity"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"/>
-        <activity android:name=".common.EditProfile"/>
+        <activity android:name="com.muravtech.meri_siksha.common.EditProfile"/>
         <activity
-            android:name=".common.GalleryActivity"
+            android:name="com.muravtech.meri_siksha.common.GalleryActivity"
             android:label="@string/my_player_activity"/>
         <activity
-            android:name=".common.StudentDiaryListActivity"
+            android:name="com.muravtech.meri_siksha.common.StudentDiaryListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".onlineexam.StartExamQuestionAnswerActivity"
+            android:name="com.muravtech.meri_siksha.onlineexam.StartExamQuestionAnswerActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".onlineexam.ExamListActivity"
+            android:name="com.muravtech.meri_siksha.onlineexam.ExamListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.NotificationListActivity"
+            android:name="com.muravtech.meri_siksha.common.NotificationListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".onlineexam.ResultAnSolutionActivityNew"
+            android:name="com.muravtech.meri_siksha.onlineexam.ResultAnSolutionActivityNew"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".onlineexam.ResultListForStudentActivity"
+            android:name="com.muravtech.meri_siksha.onlineexam.ResultListForStudentActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".onlineexam.ResultListActivity"
+            android:name="com.muravtech.meri_siksha.onlineexam.ResultListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.ClassWiseListActivity"
+            android:name="com.muravtech.meri_siksha.common.ClassWiseListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.ClassWiseSectionWiseListActivity"
+            android:name="com.muravtech.meri_siksha.common.ClassWiseSectionWiseListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".teacher_ui.StudentListForChatActivity"
+            android:name="com.muravtech.meri_siksha.teacher_ui.StudentListForChatActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.StudentListActivity"
+            android:name="com.muravtech.meri_siksha.common.StudentListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.SingleStudentAttandanceActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.SingleStudentAttandanceActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.muravtech.meri_siksha.common.SubjectListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.SubjectListActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".student_ui.SingleStudentFeesActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.SingleStudentFeesActivity"
             android:screenOrientation="portrait"/> <!-- <activity android:name="com.muravtech.merisikashastudents.Activity.LoginWithAnimation" /> -->
         <activity
-            android:name=".teacher_ui.UploadActivity"
+            android:name="com.muravtech.meri_siksha.teacher_ui.UploadActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.CalendarActivity"
+            android:name="com.muravtech.meri_siksha.common.CalendarActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.LoginWithAnimation"
+            android:name="com.muravtech.meri_siksha.common.LoginWithAnimation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.ImageUpdateDetailActivity"
+            android:name="com.muravtech.meri_siksha.common.ImageUpdateDetailActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".admin_ui.MultipleImageUploadActivity"
+            android:name="com.muravtech.meri_siksha.admin_ui.MultipleImageUploadActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".admin_ui.AssignTaskActivity"
+            android:name="com.muravtech.meri_siksha.admin_ui.AssignTaskActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.NotesPDFList"
+            android:name="com.muravtech.meri_siksha.student_ui.NotesPDFList"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".teacher_ui.TeacherTaskActivity"
+            android:name="com.muravtech.meri_siksha.teacher_ui.TeacherTaskActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".teacher_ui.TeacherDashBoardScreenActivity"
+            android:name="com.muravtech.meri_siksha.teacher_ui.TeacherDashBoardScreenActivity"
             android:screenOrientation="portrait"/>
 
         <service
-            android:name=".chat.ConnectionService"
+            android:name="com.muravtech.meri_siksha.chat.ConnectionService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:stopWithTask="false"/>
 
         <activity
-            android:name=".teacher_ui.ExeleFileActivity"
+            android:name="com.muravtech.meri_siksha.teacher_ui.ExeleFileActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.WebActivity"
+            android:name="com.muravtech.meri_siksha.common.WebActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".chat.ChatTabLayoutActivity"
+            android:name="com.muravtech.meri_siksha.chat.ChatTabLayoutActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.LoginNewActivity"
+            android:name="com.muravtech.meri_siksha.common.LoginNewActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.OtpReset"
+            android:name="com.muravtech.meri_siksha.common.OtpReset"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".common.SplashScreenActivity"
+            android:name="com.muravtech.meri_siksha.common.SplashScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -160,72 +164,69 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".admin_ui.AdminDashBoardScreenActivity"/>
+        <activity android:name="com.muravtech.meri_siksha.admin_ui.AdminDashBoardScreenActivity"/>
         <activity
-            android:name=".admin_ui.FeesActivity"
+            android:name="com.muravtech.meri_siksha.admin_ui.FeesActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".admin_ui.StaffListActivityForTask"
+            android:name="com.muravtech.meri_siksha.admin_ui.StaffListActivityForTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".teacher_ui.StudentDiaryActivity"
+            android:name="com.muravtech.meri_siksha.teacher_ui.StudentDiaryActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.BaseActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.BaseActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".admin_ui.AddCalendarEventActivity"
+            android:name="com.muravtech.meri_siksha.admin_ui.AddCalendarEventActivity"
             android:screenOrientation="portrait"/> <!-- <activity -->
         <!-- android:name=".student_ui.Exam_Question_Show" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity
-            android:name=".student_ui.WebViewActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.WebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.muravtech.meri_siksha.chat.ChatActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.SubmitDetailForResult"
+            android:name="com.muravtech.meri_siksha.student_ui.QuizActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.ResultActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.StudentDashBoardScreenActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".chat.ChatActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.VideoListingClass"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.muravtech.meri_siksha.student_ui.ExoPlayerActivity"/>
+        <activity
+            android:name="com.muravtech.meri_siksha.student_ui.Notes_View"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.muravtech.meri_siksha.teacher_ui.AdminForChatActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.QuizActivity"
+            android:name="com.muravtech.meri_siksha.student_ui.Exam_Finish"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.StudentDashBoardScreenActivity"
+            android:name="com.muravtech.meri_siksha.common.TeacherListForChatActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".student_ui.VideoListingClass"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".student_ui.ExoPlayerActivity"/>
-        <activity
-            android:name=".student_ui.Notes_View"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".student_ui.Select_ExamType"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".teacher_ui.AdminForChatActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".student_ui.Exam_Finish"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".common.TeacherListForChatActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".common.FriendTypeForChatActivity"
+            android:name="com.muravtech.meri_siksha.common.FriendTypeForChatActivity"
             android:screenOrientation="portrait"/>
 
         <service
-            android:name=".Firebase.MyFirebaseMessagingService"
+            android:name="com.muravtech.meri_siksha.Firebase.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
     </application>
 
 </manifest>

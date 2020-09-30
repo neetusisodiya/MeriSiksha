@@ -310,8 +310,8 @@
 
                         <ImageView
                             android:id="@+id/iv_notification"
-                            android:layout_width="@dimen/margin_30"
-                            android:layout_height="@dimen/margin_30"
+                            android:layout_width="@dimen/margin_35"
+                            android:layout_height="@dimen/margin_35"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="@dimen/margin_20"
                             android:tint="@color/yellow"

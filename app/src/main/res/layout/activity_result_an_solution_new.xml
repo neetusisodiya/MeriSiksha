@@ -193,7 +193,7 @@
                             android:orientation="vertical">
 
 
-                            <com.muravtech.merisiksha.onlineexam.utilities.CustomProgress
+                            <com.muravtech.meri_siksha.onlineexam.utilities.CustomProgress
                                 android:id="@+id/customProgressNotAnswered"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
                                 android:textSize="14sp" />
 
 
-                            <com.muravtech.merisiksha.onlineexam.utilities.CustomProgress
+                            <com.muravtech.meri_siksha.onlineexam.utilities.CustomProgress
                                 android:id="@+id/customProgressCorrectAnswered"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
                                 android:textSize="14sp" />
 
 
-                            <com.muravtech.merisiksha.onlineexam.utilities.CustomProgress
+                            <com.muravtech.meri_siksha.onlineexam.utilities.CustomProgress
                                 android:id="@+id/customProgressWrongAnswered"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -381,7 +381,7 @@
                             android:textColor="#FFFFFF" />
 
 
-                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/allCorrectAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -437,7 +437,7 @@
                             android:textColor="#FFFFFF" />
 
 
-                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/allWrongAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -484,7 +484,7 @@
                             android:textColor="#FFFFFF" />
 
 
-                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/allNotAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -908,7 +908,7 @@
                             android:textSize="12sp" />
 
 
-                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/CorrectAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -966,7 +966,7 @@
                             android:textSize="12sp" />
 
 
-                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/WrongAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1027,7 +1027,7 @@
                             android:textSize="12sp" />
 
 
-                        <com.muravtech.merisiksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/NotAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

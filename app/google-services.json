@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:525629731052:android:379334b89733c5a12575c9",
+        "android_client_info": {
+          "package_name": "com.muravtech.meri_siksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525629731052-h67cfr74qvmpjcblfpsmm8g6kbu428vb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muravtech.meri_siksha",
+            "certificate_hash": "d8a50e8ce1be56d692120511c724a71143a1f2b3"
+          }
+        },
+        {
+          "client_id": "525629731052-bve9s72n37to5kv4r98vogv4liak0mg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZbuxjEyHIaX3R9h9UfEjOv_NsYka_6k4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525629731052-bve9s72n37to5kv4r98vogv4liak0mg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:525629731052:android:b49f3889e8e95ea92575c9",
         "android_client_info": {
           "package_name": "com.muravtech.merisiksha"
