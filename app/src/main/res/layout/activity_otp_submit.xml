@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgoround_main"
     android:orientation="vertical"
-    tools:context="com.muravtech.meri_siksha.common.LoginWithAnimation">
+    tools:context="com.muravtech.merishiksha.common.LoginWithAnimation">
 
 
     <ImageView

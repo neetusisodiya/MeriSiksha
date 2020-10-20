@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.muravtech.meri_siksha"
+        applicationId "com.muravtech.merishiksha"
         minSdkVersion 21
 //        ndk {
 //            // config you want to support device
@@ -97,8 +97,11 @@ dependencies {
     implementation 'com.github.smarteist:autoimageslider:1.3.9'
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
     implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.jaedongchicken:ytplayer:1.4.4'
     implementation('io.socket:socket.io-client:0.8.3') {
         exclude group: 'org.json', module: 'json'
     }
 
 }
+//Keyaliya--meri_siksha
+//pwd--meri_siksha@123

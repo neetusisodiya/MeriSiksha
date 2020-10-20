@@ -75,7 +75,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer1Tag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="#000">
 
-                            </com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView>
+                            </com.muravtech.merishiksha.onlineexam.utilities.CircularTextView>
 
 
                             <TextView
@@ -96,6 +96,7 @@
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="8dp"
                                 android:layout_weight="9"
+                                android:text="gggggg"
                                 android:background="@drawable/item_border"
                                 android:padding="6dp"
                                 android:textAppearance="?android:textAppearanceMedium"
@@ -118,7 +119,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer2Tag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -159,7 +160,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer3Tag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -199,7 +200,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
 
                                 android:id="@+id/answer4Tag"
                                 android:layout_width="wrap_content"
@@ -243,7 +244,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer5Tag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -328,6 +329,7 @@
                             android:layout_marginLeft="8dp"
                             android:background="@drawable/item_border"
                             android:padding="6dp"
+                            android:text="user_anser_tv"
                             android:textAppearance="?android:textAppearanceMedium"
                             android:textColor="#000">
 
@@ -358,6 +360,7 @@
                             android:layout_marginLeft="8dp"
                             android:background="@drawable/item_border"
                             android:padding="6dp"
+                            android:text="hhhhh"
                             android:textAppearance="?android:textAppearanceMedium"
                             android:textColor="#000">
 
@@ -448,7 +451,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer1TagHindi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -459,7 +462,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="#000">
 
-                            </com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView>
+                            </com.muravtech.merishiksha.onlineexam.utilities.CircularTextView>
 
 
                             <TextView
@@ -492,7 +495,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer2TagHindi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -503,7 +506,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="#000">
 
-                            </com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView>
+                            </com.muravtech.merishiksha.onlineexam.utilities.CircularTextView>
 
 
                             <TextView
@@ -536,7 +539,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer3TagHindi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -547,7 +550,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="#000">
 
-                            </com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView>
+                            </com.muravtech.merishiksha.onlineexam.utilities.CircularTextView>
 
 
                             <TextView
@@ -579,7 +582,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer4TagHindi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -590,7 +593,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="#000">
 
-                            </com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView>
+                            </com.muravtech.merishiksha.onlineexam.utilities.CircularTextView>
 
 
                             <TextView
@@ -625,7 +628,7 @@
                             android:orientation="horizontal">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                            <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                                 android:id="@+id/answer5TagHindi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -636,7 +639,7 @@
                                 android:textAppearance="?android:textAppearanceMedium"
                                 android:textColor="#000">
 
-                            </com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView>
+                            </com.muravtech.merishiksha.onlineexam.utilities.CircularTextView>
 
 
                             <TextView

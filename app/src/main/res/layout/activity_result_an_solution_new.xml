@@ -138,8 +138,8 @@
 
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/activity_result"
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -193,7 +193,7 @@
                             android:orientation="vertical">
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CustomProgress
+                            <com.muravtech.merishiksha.onlineexam.utilities.CustomProgress
                                 android:id="@+id/customProgressNotAnswered"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -208,12 +208,11 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="left"
                                 android:padding="5dp"
-                                android:text="15 Not Answered"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CustomProgress
+                            <com.muravtech.merishiksha.onlineexam.utilities.CustomProgress
                                 android:id="@+id/customProgressCorrectAnswered"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -228,12 +227,11 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="left"
                                 android:padding="5dp"
-                                android:text="10 Correct Answered"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
 
-                            <com.muravtech.meri_siksha.onlineexam.utilities.CustomProgress
+                            <com.muravtech.merishiksha.onlineexam.utilities.CustomProgress
                                 android:id="@+id/customProgressWrongAnswered"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -248,7 +246,6 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="left"
                                 android:padding="5dp"
-                                android:text="5 Wrong Answered"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp" />
 
@@ -305,7 +302,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="right"
-                            android:text="25"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp" />
 
@@ -343,7 +339,6 @@
                         android:clickable="false"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
-                        android:text="10/210"
                         android:textColor="#FFFFFF" />
                 </LinearLayout>
 
@@ -351,6 +346,7 @@
 
 
             <ScrollView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -381,7 +377,7 @@
                             android:textColor="#FFFFFF" />
 
 
-                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/allCorrectAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -390,7 +386,6 @@
                             android:layout_centerVertical="true"
                             android:gravity="center"
                             android:padding="6dp"
-                            android:text="12"
                             android:textAllCaps="true"
                             android:textAppearance="?android:textAppearanceMedium"
                             android:textColor="#FFFFFF" />
@@ -437,7 +432,7 @@
                             android:textColor="#FFFFFF" />
 
 
-                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/allWrongAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -446,7 +441,6 @@
                             android:layout_centerVertical="true"
                             android:gravity="center"
                             android:padding="6dp"
-                            android:text="12"
                             android:textAllCaps="true"
                             android:textAppearance="?android:textAppearanceMedium"
                             android:textColor="#FFFFFF" />
@@ -484,7 +478,7 @@
                             android:textColor="#FFFFFF" />
 
 
-                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/allNotAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -493,7 +487,6 @@
                             android:layout_centerVertical="true"
                             android:gravity="center"
                             android:padding="6dp"
-                            android:text="12"
                             android:textAllCaps="true"
                             android:textAppearance="?android:textAppearanceMedium"
                             android:textColor="#FFFFFF" />
@@ -872,7 +865,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="visible">
 
 
             <LinearLayout
@@ -908,14 +901,13 @@
                             android:textSize="12sp" />
 
 
-                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/CorrectAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="4dp"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="12"
                             android:textAllCaps="true"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
@@ -966,14 +958,13 @@
                             android:textSize="12sp" />
 
 
-                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/WrongAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="4dp"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="12"
                             android:textAllCaps="true"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
@@ -1027,14 +1018,13 @@
                             android:textSize="12sp" />
 
 
-                        <com.muravtech.meri_siksha.onlineexam.utilities.CircularTextView
+                        <com.muravtech.merishiksha.onlineexam.utilities.CircularTextView
                             android:id="@+id/NotAnswer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="4dp"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="12"
                             android:textAllCaps="true"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
@@ -1108,7 +1098,6 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:text="1/25"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="@color/colorPrimary" />
 
