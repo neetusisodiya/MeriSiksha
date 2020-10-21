@@ -45,18 +45,11 @@ public class Application extends android.app.Application {
         super.onCreate();
         mContex = this;
         appPreferences=new AppPreferences(mContex);
-        // Obtain the FirebaseAnalytics instance.
-       // mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
         // [END FirebaseAnalytics instance]
         FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true);
-      //  Fabric.with(this, new Crashlytics());
 
 
-//        final Fabric fabric = new Fabric.Builder(this)
-//                .kits(new Crashlytics())
-//                .debuggable(true)
-//                .build();
-//        Fabric.with(fabric);
         FirebaseApp.initializeApp(getApplicationContext());
         getSocket(this);
 

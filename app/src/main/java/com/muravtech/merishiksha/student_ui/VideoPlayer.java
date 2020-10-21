@@ -3,20 +3,38 @@ package com.muravtech.merishiksha.student_ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.jaedongchicken.ytplayer.YoutubePlayerView;
 import com.jaedongchicken.ytplayer.model.YTParams;
 import com.muravtech.merishiksha.R;
 
 public class VideoPlayer extends AppCompatActivity {
-
-
+    ImageView img_back;
+    String url;
+    String[] separated;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_player);
+        url=getIntent().getStringExtra("url");
+      if(url.contains("=")) {
+          separated = url.split("=");
+      }else {
+          separated = url.split("https://youtu.be/");
+      }
+        Log.e("TAG", "url>>>>>>: "+separated[1]);
 
         YoutubePlayerView youtubePlayerView = (YoutubePlayerView) findViewById(R.id.youtubePlayerView);
+         img_back =findViewById(R.id.img_back);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         // Control values
         // see more # https://developers.google.com/youtube/player_parameters?hl=en
@@ -35,9 +53,9 @@ public class VideoPlayer extends AppCompatActivity {
 
 
         // make auto height of youtube. if you want to use 'wrap_content'
-        youtubePlayerView.setAutoPlayerHeight(this);
+       // youtubePlayerView.setAutoPlayerHeight(this);
         // initialize YoutubePlayerCallBackListener and VideoID
-        youtubePlayerView.initialize("cshF4hYTt7g", new YoutubePlayerView.YouTubeListener() {
+        youtubePlayerView.initialize(separated[1], new YoutubePlayerView.YouTubeListener() {
 
             @Override
             public void onReady() {

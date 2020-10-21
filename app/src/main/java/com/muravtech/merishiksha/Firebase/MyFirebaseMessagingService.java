@@ -14,12 +14,17 @@ import androidx.core.app.NotificationCompat;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.muravtech.merishiksha.R;
+import com.muravtech.merishiksha.admin_ui.AdminDashBoardScreenActivity;
 import com.muravtech.merishiksha.chat.ChatActivity;
+import com.muravtech.merishiksha.common.SplashScreenActivity;
+import com.muravtech.merishiksha.student_ui.StudentDashBoardScreenActivity;
+import com.muravtech.merishiksha.teacher_ui.TeacherDashBoardScreenActivity;
 import com.muravtech.merishiksha.utils.AppPreferences;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private static final String TAG = "FCM Service";
     AppPreferences appPreferences;
+    Intent intent;
 
     @Override
     public void onNewToken(@NonNull String s) {
@@ -35,9 +40,18 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
+        Log.e(TAG, "onMessageReceived: >>>>>>>>>"+remoteMessage );
+        if(appPreferences.getStringValue(AppPreferences.Type).equalsIgnoreCase("9")) {
+            intent = new Intent(this, AdminDashBoardScreenActivity.class);
 
-        Intent intent = new Intent(this, ChatActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        }else if(appPreferences.getStringValue(AppPreferences.Type).equalsIgnoreCase("3")) {
+            intent = new Intent(this, StudentDashBoardScreenActivity.class);
+
+        }else {
+            intent = new Intent(this, TeacherDashBoardScreenActivity.class);
+        }
+
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         intent.putExtra("order_id", remoteMessage.getNotification().getTicker());
         startActivity(intent);

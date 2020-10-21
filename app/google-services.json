@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "525629731052",
-    "firebase_url": "https://merisiksha-755c5.firebaseio.com",
-    "project_id": "merisiksha-755c5",
-    "storage_bucket": "merisiksha-755c5.appspot.com"
+    "project_number": "193575321134",
+    "firebase_url": "https://merisiksha-e1dc5.firebaseio.com",
+    "project_id": "merisiksha-e1dc5",
+    "storage_bucket": "merisiksha-e1dc5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:525629731052:android:8a7e6bfab9f450b02575c9",
+        "mobilesdk_app_id": "1:193575321134:android:08b4ff0552eb957f2a29bf",
         "android_client_info": {
-          "package_name": "com.muravtech.meri_shiksha"
+          "package_name": "com.muravtech.merishiksha"
         }
       },
       "oauth_client": [
         {
-          "client_id": "525629731052-jjm0pv681g57c9dnknr3spjjela0imrr.apps.googleusercontent.com",
+          "client_id": "193575321134-k9d577pc1pvmcnf57p38j2spp2blfhc7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.muravtech.meri_shiksha",
+            "package_name": "com.muravtech.merishiksha",
             "certificate_hash": "d8a50e8ce1be56d692120511c724a71143a1f2b3"
           }
         },
         {
-          "client_id": "525629731052-bve9s72n37to5kv4r98vogv4liak0mg2.apps.googleusercontent.com",
+          "client_id": "193575321134-f30vv3nks4c06cki3pii2jpgintnt7b9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZbuxjEyHIaX3R9h9UfEjOv_NsYka_6k4"
+          "current_key": "AIzaSyA3-CZP375cjf6w9rn4zFLRJwPzhkxElw8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "525629731052-bve9s72n37to5kv4r98vogv4liak0mg2.apps.googleusercontent.com",
+              "client_id": "193575321134-f30vv3nks4c06cki3pii2jpgintnt7b9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

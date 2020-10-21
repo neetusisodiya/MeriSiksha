@@ -18,6 +18,7 @@ import com.muravtech.merishiksha.Bean.UpdateBean;
 import com.muravtech.merishiksha.R;
 
 import com.muravtech.merishiksha.student_ui.ExoPlayerActivity;
+import com.muravtech.merishiksha.student_ui.VideoPlayer;
 import com.muravtech.merishiksha.utils.Utils;
 
 import java.util.ArrayList;
@@ -48,8 +49,8 @@ public class VideoSubjectTopicsVideoAdapter extends RecyclerView.Adapter<VideoSu
         holder.message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mIntent = ExoPlayerActivity.getStartIntent(context, listSubjectName.get(position).getFilename().get(0).getFile());
-                context.startActivity(mIntent);
+                //Intent mIntent = ExoPlayerActivity.getStartIntent(context, listSubjectName.get(position).getFilename().get(0).getFile());
+                context.startActivity(new Intent(context, VideoPlayer.class).putExtra("url",listSubjectName.get(position).getFilename().get(0).getFile()));
             }
         });
     }
