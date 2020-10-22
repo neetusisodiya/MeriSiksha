@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:193575321134:android:08b4ff0552eb957f2a29bf",
+        "mobilesdk_app_id": "1:193575321134:android:d31e2f52845c02692a29bf",
         "android_client_info": {
-          "package_name": "com.muravtech.merishiksha"
+          "package_name": "com.muravtech.meri_siksha"
         }
       },
       "oauth_client": [
         {
-          "client_id": "193575321134-k9d577pc1pvmcnf57p38j2spp2blfhc7.apps.googleusercontent.com",
+          "client_id": "193575321134-ctp84o8i0vb3vg963fglaj3911g2hfme.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.muravtech.merishiksha",
+            "package_name": "com.muravtech.meri_siksha",
             "certificate_hash": "d8a50e8ce1be56d692120511c724a71143a1f2b3"
           }
         },

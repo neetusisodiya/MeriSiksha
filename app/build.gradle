@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.muravtech.merishiksha"
+        applicationId "com.muravtech.meri_siksha"
         minSdkVersion 21
 //        ndk {
 //            // config you want to support device
@@ -101,6 +101,7 @@ dependencies {
     implementation('io.socket:socket.io-client:0.8.3') {
         exclude group: 'org.json', module: 'json'
     }
+
 
 }
 //Keyaliya--meri_siksha

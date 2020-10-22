@@ -7,7 +7,7 @@
 
     android:fillViewport="true"
     android:orientation="vertical"
-    tools:context="com.muravtech.merishiksha.common.EditProfile">
+    tools:context="com.muravtech.meri_siksha.common.EditProfile">
 
     <LinearLayout
         android:layout_width="match_parent"

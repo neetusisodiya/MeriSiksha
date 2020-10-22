@@ -17,7 +17,7 @@
         android:padding="10dp"
         android:layout_alignParentEnd="true"
         android:src="@android:drawable/ic_menu_close_clear_cancel"
-        app:tint="@color/black"/>
+       />
 
    <!-- <com.hustunique.parsingplayer.player.view.ParsingVideoView
         android:layout_width="match_parent"

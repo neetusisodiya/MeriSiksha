@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.muravtech.merishiksha.student_ui.NotesPDFList">
+    tools:context="com.muravtech.meri_siksha.student_ui.NotesPDFList">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
         android:layout_marginTop="@dimen/font_20"/>
 
 
-    <com.muravtech.merishiksha.utils.CustomTextView
+    <com.muravtech.meri_siksha.utils.CustomTextView
         android:id="@+id/empty_view"
         android:gravity="center"
         android:layout_width="match_parent"
